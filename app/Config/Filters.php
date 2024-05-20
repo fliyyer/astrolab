@@ -34,6 +34,9 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'authentication' => \App\Middleware\Authentication::class,
+        'auth' => \App\Middleware\AuthenticationMiddleware::class,
+
     ];
 
     /**
@@ -103,5 +106,8 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+        'authentication' => \App\Middleware\Authentication::class,
+        'auth' => \App\Middleware\AuthenticationMiddleware::class,
+    ];
 }

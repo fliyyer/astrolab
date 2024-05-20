@@ -16,6 +16,23 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="border-2 border-[#11190C] text-[#11190C] rounded-md px-5 uppercase font-semibold py-2">Login</button>
+        <?php if (session()->has('userId')) : ?>
+            <div class="relative">
+                <button id="userDropdownBtn" class="text-[#11190C] rounded-md px-5 uppercase font-semibold py-2 focus:outline-none">
+                    <?= session('name') ?>
+                </button>
+                <div id="userDropdown" class="hidden absolute right-0 top-full mt-1 bg-white shadow-md rounded-md overflow-hidden transition-all duration-300">
+                    <button onclick="window.location.href='<?= base_url('logout') ?>'" class="block px-4 py-2 text-[#11190C] hover:bg-gray-200">Logout</button>
+                </div>
+            </div>
+            <script>
+                document.getElementById('userDropdownBtn').addEventListener('click', function() {
+                    var dropdown = document.getElementById('userDropdown');
+                    dropdown.classList.toggle('hidden');
+                });
+            </script>
+        <?php else : ?>
+            <a href="/login" class="text-[#11190C] rounded-md px-5 uppercase font-semibold py-2">Login</a>
+        <?php endif; ?>
     </div>
 </nav>

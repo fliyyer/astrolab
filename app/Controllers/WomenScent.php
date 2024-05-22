@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-class Features extends BaseController
+class WomenScent extends BaseController
 {
     public function index()
     {
         if (!session()->has('userId')) {
             return redirect()->to('/login');
         }
-        return view('features');
+        return view('womenscent');
     }
 }

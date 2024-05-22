@@ -18,4 +18,9 @@ class AuthenticationMiddleware
         }
         return;
     }
+
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
+    {
+        // Do something here after the request has been processed
+    }
 }

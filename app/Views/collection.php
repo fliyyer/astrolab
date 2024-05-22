@@ -12,17 +12,23 @@
     <?php include('partials/navbar.php'); ?>
     <main class="flex flex-col max-w-7xl mx-auto my-[50px]">
         <section class="max-w-7xl mx-auto grid grid-cols-2">
-            <div class="">
+            <a href="/men" class="cursor-pointer hover:scale-105 duration-300">
                 <img class="w-full h-[800px]" src="<?= base_url('assets/men.png') ?>" alt="Men">
-            </div>
-            <div class="">
+            </a>
+            <a href="/women" class="cursor-pointer hover:scale-105 duration-300">
                 <img class="w-full h-[800px]" src="<?= base_url('assets/women.png') ?>" alt="Women">
-            </div>
+            </a>
         </section>
         <div class="grid grid-cols-3">
-            <img src="<?= base_url('assets/col1.png') ?>" alt="">
-            <img src="<?= base_url('assets/col2.png') ?>" alt="">
-            <img src="<?= base_url('assets/col3.png') ?>" alt="">
+            <a href="<?= base_url('collection?category=goods-trinkets') ?>" class="cursor-pointer hover:scale-105 duration-300">
+                <img src="<?= base_url('assets/col1.png') ?>" alt="">
+            </a>
+            <a href="<?= base_url('collection?category=exclusive-release') ?>" class="cursor-pointer hover:scale-105 duration-300">
+                <img src="<?= base_url('assets/col2.png') ?>" alt="">
+            </a>
+            <a href="<?= base_url('collection?category=astro') ?>" class="cursor-pointer hover:scale-105 duration-300">
+                <img src="<?= base_url('assets/col3.png') ?>" alt="">
+            </a>
         </div>
     </main>
     <?php include('partials/footer.php'); ?>

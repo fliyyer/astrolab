@@ -7,7 +7,7 @@ class Auth extends BaseController
 {
     public function login()
     {
-        return view('login.php');
+        return view('login');
     }
 
     public function processLogin()

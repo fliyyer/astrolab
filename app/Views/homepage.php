@@ -20,7 +20,9 @@
                 <p class="text-[48px] font-medium">SELECT BY</p>
                 <img src="<?= base_url('assets/header.png') ?>" alt="Astrolab">
                 <p class="uppercase text-[20px] font-medium text-[#11190C]">ASTROLAB’s very own line of exciting goods. Offering different kinds of objects, from artist collaborations to functional daily goods, Select by Sonderlab is here not to replace; but to complete.</p>
-                <button class="text-[#E6FF03] mt-44 bg-[#11190C] rounded-3xl px-4 py-2 font-semibold text-lg">SELECT BY ASTRO</button>
+                <a href="<?= base_url('?category=astro') ?>">
+                    <button class="text-[#E6FF03] mt-44 bg-[#11190C] rounded-3xl px-4 py-2 font-semibold text-lg">SELECT BY ASTRO</button>
+                </a>
             </div>
             <div class="w-1/2 relative">
                 <img class="absolute h-full z-0" src="<?= base_url('assets/petir.png') ?>" alt="Petir Kuning">
@@ -73,17 +75,17 @@
             ?>
         </div>
         <div class="flex justify-center mt-[50px] mx-auto">
-            <button class="uppercase text-[#E6FF03] px-[30px] py-3 bg-[#11190C] rounded-[90px] text-xl font-semibold">View All</button>
+            <a href="/womenscent"><button class="uppercase text-[#E6FF03] px-[30px] py-3 bg-[#11190C] rounded-[90px] text-xl font-semibold">View All</button></a>
         </div>
     </section>
     <!-- men/women -->
     <section class="max-w-7xl mx-auto grid grid-cols-2">
-        <div class="">
+        <a href="/men" class="cursor-pointer hover:scale-105 duration-300">
             <img class="w-full h-[800px]" src="<?= base_url('assets/men.png') ?>" alt="Men">
-        </div>
-        <div class="">
+        </a>
+        <a href="/women" class="cursor-pointer hover:scale-105 duration-300">
             <img class="w-full h-[800px]" src="<?= base_url('assets/women.png') ?>" alt="Women">
-        </div>
+        </a>
     </section>
     <section class="max-w-7xl flex mx-auto gap-4 py-[50px]">
         <div class="col-span-4">

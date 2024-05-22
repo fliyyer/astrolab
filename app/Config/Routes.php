@@ -17,4 +17,7 @@ $routes->group('', ['namespace' => 'App\Controllers', 'middleware' => 'authentic
     $routes->get('/collection', 'Collection::index');
     $routes->get('/features', 'Features::index');
     $routes->get('/feature/(:num)', 'Feature::detail/$1');
+    $routes->get('/womenscent', 'WomenScent::index');
+    $routes->get('/men', 'Home::men');
+    $routes->get('/women', 'Home::women');
 });

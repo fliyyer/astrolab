@@ -64,7 +64,7 @@
                 .catch(error => console.error('Error:', error));
         }
     </script>
-    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-RfHJfZwaUAMDPomc"></script>
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="CLIENT_KEY_MIDTRANS"></script>
 </head>
 
 <body class="bg-[#CFC8BC]">

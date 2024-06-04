@@ -6,9 +6,12 @@ class Features extends BaseController
 {
     public function index()
     {
-        if (!session()->has('userId')) {
-            return redirect()->to('/login');
+        $detail = $this->request->getGet('id');
+        switch ($detail) {
+            case '1':
+                return view('detailFeature');
+            default:
+                return view('features');
         }
-        return view('features');
     }
 }

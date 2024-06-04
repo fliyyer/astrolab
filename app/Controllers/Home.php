@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
+use App\Models\CartModel;
+
 class Home extends BaseController
 {
     public function index()
+
     {
-        if (!session()->has('userId')) {
-            return redirect()->to('/login');
-        }
         $category = $this->request->getGet('category');
         switch ($category) {
             case 'astro':
@@ -19,6 +19,7 @@ class Home extends BaseController
     public function men()
     {
         $category = $this->request->getGet('category');
+
         switch ($category) {
             case 'accessories':
                 return view('accessories');
@@ -36,6 +37,7 @@ class Home extends BaseController
                 return view('men');
         }
     }
+
     public function women()
     {
         $category = $this->request->getGet('category');
@@ -55,5 +57,20 @@ class Home extends BaseController
             default:
                 return view('women');
         }
+    }
+
+    public function carts()
+    {
+        $session = session();
+        $data = [
+            'name' => $session->get('name'),
+            'email' => $session->get('email'),
+        ];
+
+        return view('carts', $data);
+    }
+    public function productDetail()
+    {
+        return view('product_detail');
     }
 }

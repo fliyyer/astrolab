@@ -20,4 +20,7 @@ $routes->group('', ['namespace' => 'App\Controllers', 'middleware' => 'authentic
     $routes->get('/womenscent', 'WomenScent::index');
     $routes->get('/men', 'Home::men');
     $routes->get('/women', 'Home::women');
+    $routes->get('/carts', 'Home::carts');
+    $routes->get('/detail_product', 'Home::productDetail');
+    $routes->get('payment/token', 'Payment::token');
 });

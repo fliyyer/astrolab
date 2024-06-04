@@ -15,14 +15,14 @@
         <div class="grid grid-cols-2 lg:p-0 p-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto w-full">
             <?php
             $cards = [
-                ['image' => 'assets/acc1.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc2.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc3.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc4.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc5.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc6.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc7.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
-                ['image' => 'assets/acc8.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc1', 'image' => 'assets/acc1.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc2', 'image' => 'assets/acc2.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc3', 'image' => 'assets/acc3.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc4', 'image' => 'assets/acc4.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc5', 'image' => 'assets/acc5.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc6', 'image' => 'assets/acc6.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc7', 'image' => 'assets/acc7.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
+                ['slug' => 'acc8', 'image' => 'assets/acc8.png', 'title' => 'BASTILLE FRAGRANCES', 'subtitle' => 'Hors - Piste', 'price' => 'IDR 151.200'],
             ];
             foreach ($cards as $card) {
                 echo view('partials/card_category', $card);

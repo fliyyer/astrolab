@@ -4,7 +4,7 @@ namespace Config;
 
 class Midtrans
 {
-    public $serverKey = 'SB-Mid-server-f7OidPTKTbaExy9x1OsztMPG';
+    public $serverKey = 'SERVEY_API_KEY_MIDTRANS';
     public $isProduction = false;
     public $isSanitized = true;
     public $is3ds = true;
